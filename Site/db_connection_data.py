@@ -1,4 +1,9 @@
-host = 'sql.freedb.tech'
-db_user = 'freedb_sql10742457'
-db_password = '*C6#axUD4BVmGaW'
-db_database = 'freedb_sql10742457'
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+host = os.getenv('HOST')
+db_user = os.getenv('DB_USER')
+db_password = os.getenv('DB_PASSWORD')
+db_database = os.getenv('DB_DATABASE')
